@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="shortcut icon" href="assets/IMG/ICON NOTEBOOK.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <div id="card">
+            <div id="title">
+                <h1>TAREFAS</h1>
+            </div>
+            <div id="control">
+                <div id="top_control">
+                    <input type="text" placeholder="Título" maxlength="40" autocomplete="off" id="task_title_input">
+                    <i class="fa-solid fa-eye-dropper" id="task_picker_color"></i>
+                    <input type="color" value="#7161ef" id="task_color_input">
+                </div>
+                <div id="body_control">
+                    <input type="text" placeholder="Adicionar à sua tarefa" maxlength="120" autocomplete="off" id="task_description_input">
+                    <button id="task_add_button"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+            <div id="content"></div>
+        </div>
+    </div>
+</body>
+<script type="module" src="scripts/main.js" defer></script>
+</html>
